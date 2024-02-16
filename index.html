@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BananaGram</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" defer src="js/main.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <div class="container">
+        <h1>Bananagrams</h1>
+        <div class="buttons">
+            <button id="split">Split</button>
+            <button id="dump">Dump</button>
+            <button id="peel">Peel</button>
+            <button id="bananas">Bananas</button>
+            <!-- <button id="row">Add extra row</button>
+            <button id="column">Add extra column</button> -->
+        </div>
+        <div class="side-left">
+            <!-- <h1>Tile Area</h1> -->
+            <div id="original-tiles" class="tiles-container"></div>
+        </div>
+        <h1>Play Area</h1>
+        <div id="play-area" class="tiles-container"></div>
+
+        <div id="playerModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closePlayerModal">&times;</span>
+                <h2>Game Setup</h2>
+                <p>Enter the number of players (2 to 4) and the Room ID:</p>
+                <label for="playerCountInput">Number of Players:</label>
+                <input type="number" id="playerCountInput" min="2" max="4" />
+                
+                <label for="roomIdInput">Room ID (for joining):</label>
+                <input type="text" id="roomIdInput" />
+
+                <button id="startGameBtn">Start Game</button>
+                <button id="joinGameBtn">Join Game</button>
+            </div>
+        </div>
+
+
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <p>Select one of your tiles to return to the Tile Pool:</p>
+                <p>You will get 3 tiles to replace the one that you dumped</p>
+                <input type="text" id="tileSelectionInput" placeholder="Enter a tile...">
+                <button class="dump" id="dumpButton">Dump</button>
+            </div>
+        </div>
+
+        <div class="player-section">
+            <span class="title-button">
+                <h1>Your Tiles</h1>
+                <button id="randomize-tiles">Randomize</button>
+            </span>
+            <div id="player-tiles" class="tiles-container"></div>
+        </div>
+
+        <section id="message-section">
+            <h1>Dictionary Check</h1>
+            <ul id="message"></ul>
+        </section>
+    </div>
+</body>
+</html>
