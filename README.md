@@ -1,5 +1,7 @@
 # BananaGram
 
+Click here to play (For now, just close the modal of the multiplayer box, this will be added later on) [BananaGram](https://bissmark.github.io/BananaGramsSinglePlayer/)
+
 ## Description
 
 BananaGram is a game that allows users to to create words using randomly selected letters. The game is similar to Scrabble, but without the board. The game is played by 2-8 players. Each player starts with 21 tiles. The first player to use all of their tiles wins.
